@@ -1,6 +1,6 @@
 import { createContext, createElement } from 'react'
 import { Can as CanOrigin } from '@casl/react'
-import ability from './ability'
+import { getAbility } from './ability'
 
 function createContextualCan(Consumer) {
   return function ContextualCan(props) {
@@ -15,8 +15,5 @@ function createContextualCan(Consumer) {
   }
 }
 
-export const AbilityContext = createContext({
-  ability: ability,
-  auth: {}
-})
+export const AbilityContext = createContext({})
 export const Can = createContextualCan(AbilityContext.Consumer)

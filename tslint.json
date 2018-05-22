@@ -1,5 +1,9 @@
 {
-  "extends": ["tslint:latest"],
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
   "rules": {
     "ordered-imports": false,
     "interface-name": [
@@ -88,7 +92,7 @@
     "radix": true,
     "semicolon": [
       true,
-      "always"
+      "never"
     ],
     "switch-default": true,
     "trailing-comma": [
